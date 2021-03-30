@@ -1,0 +1,1 @@
+var myTextBox = document.querySelector('.activity');

@@ -4,15 +4,6 @@ body {
     line-height: 1;
 }
 
-textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-}
-
 .jumbotron {
     text-align: center;
     background: rgb(131,58,180);
@@ -22,11 +13,32 @@ textarea {
     border-bottom: 10px solid black;
 }
 
-div {
-    margin: auto;
-    width: 50%;
-    border: 1px solid black;
+.grid-container {
+    display: grid;
+    grid-template-columns: 15rem auto 15rem;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #b5179e;
+    border: 1px solid white;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.activity {
+    border: 1px solid green;
     padding: 15px;
+}
+
+.btn {
+    background-color: #b5179e;
+    color: white;
+    border: 1px solid #ff7900;
 }
 
 .description {
