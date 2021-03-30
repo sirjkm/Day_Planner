@@ -1,5 +1,7 @@
 var calendar = document.getElementById("calendar")
 
+var btnElements = document.getElementsByClassName("btn")
+
 document.getElementById("btn_1").addEventListener("click",
 
     function() {
@@ -13,4 +15,13 @@ document.getElementById("btn_1").addEventListener("click",
         document.getElementById('activity_' + activity_num).value = activity;
     }
 
-    loadData(1)
+    for(var i = 0; i < btnElements.length; i++) {
+        loadData(i+1)
+        addSaveHandler(btnElements[i], i+1)
+    }
+
+    function addSaveHandler(btnElements, num) {
+        btnElements.addEventListener("click", function() {
+            localStorage.setItem("activity_" + num, document.getElementById("activity_" + num).value)
+        })
+    }
