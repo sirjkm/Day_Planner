@@ -1,3 +1,9 @@
+// code for jumbotron date:
+var d = new Date();
+document.getElementById("currentDay").innerHTML = d;
+
+
+// code for date/time activity block:
 var calendar = document.getElementById("calendar")
 
 var btnElements = document.getElementsByClassName("btn")
